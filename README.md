@@ -1,5 +1,5 @@
 # Session Management by Servlet
-#Why HTTP is stateless and what does it mean ?
+# Why HTTP is stateless and what does it mean ?
 * HTTP is designed to be a stateless protocol, meaning that each request from a client to a server is independent and unrelated to any previous requests. There are several reasons why HTTP is designed to be stateless
 
 * Advantages of stateless nature:
@@ -33,7 +33,7 @@ A stateless protocol simplifies the design and implementation of both clients an
 * Custom Session Storage
 * Session Expiry and Cleanup
 # Why cookies and headers are used ?
-* Advantages:
+# Advantages:
 * Instead of sessions, tokens or often JSON Web Tokens or JWTs can be stored in cookies or headers for authentication.
 * Cookies or local storage can be used to store small amounts of data on the client side.
 * Custom headers can be used to transmit state information between the client and server.
@@ -41,7 +41,7 @@ A stateless protocol simplifies the design and implementation of both clients an
 * In microservices architectures, cookies or headers may be used to pass information between services.
 * By offloading some state to the client side (cookies or headers), the server's load can be reduced.
 * Cookies or headers may be used to transmit authentication tokens in a Single Sign-On system.
-* Disadvantages:
+# Disadvantages:
 * Tokens are usually stateless, meaning the server doesn't store information about the user's session. This could lead to increased token size and potential security concerns if sensitive information is stored in the token.
 * Small data size and data stored on the client side is susceptible to tampering, so it's not suitable for sensitive information.
 * Custom headers might not be as well-supported in some environments or by certain proxy servers.
